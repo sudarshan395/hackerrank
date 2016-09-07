@@ -1,0 +1,5 @@
+#!/usr/bin/python
+n = int(input())
+t = tuple(int(x.strip()) for x in input().split(' '))
+m = hash(t)
+print(m)
