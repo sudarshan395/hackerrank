@@ -1,0 +1,11 @@
+N = int(input())
+x = input()
+a = x.split()
+arr = list(map(int,a))
+x = max(arr)
+k1 = list()
+for i in range(len(arr)):
+    if x!=arr[i]:
+        k1.append(arr[i])
+y = max(k1)
+print (y)
