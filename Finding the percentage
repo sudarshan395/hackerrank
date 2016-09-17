@@ -1,0 +1,20 @@
+N = int(input())
+a = dict()
+list1= list()
+for i in range(N):
+    b = input()
+    list1= b.split()
+    d = list1[0]
+    list1.remove(list1[0])
+    newlst1 = list(map(float, list1))
+    a[d] = newlst1
+name = input()
+total = 0
+if name in a:
+    marks = a[name]
+    length = len(marks)
+    for num in marks:
+        total+=num
+average = total/length
+print("%.2f" % average)
+    
